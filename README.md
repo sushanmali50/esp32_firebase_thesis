@@ -35,15 +35,31 @@ This architecture is designed around **event-driven coordination**, allowing ind
 
 ## 📷 System Architecture
 
-```mermaid
-flowchart TD
-  A[Mobile App (Flutter)] --> B[Firebase RTDB]
-  B --> A
-  B --> C[ESP32 Robot Car]
-  B --> D[Raspberry Pi Arm]
-  C --> B
-  D --> B
 ```
+          +--------------------+
+          |  Mobile App        |
+          |  (Flutter)         |
+          +--------+-----------+
+                   |
+         commands & updates
+                   v
+         +---------+----------+
+         |    Firebase RTDB   |
+         +---------+----------+
+           ^       |       ^
+           |       |       |
+ sensor    |  status/   task trigger
+  logs     |  commands       |
+           |       v       |
+       +---+---+       +---+---+
+       | ESP32 |       |  RPi   |
+       | Robot |       |  Arm   |
+       +-------+       +-------+
+           |               |
+     sensor data     task_done flag
+           +---------------+
+```
+
 
 
 
