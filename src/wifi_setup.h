@@ -4,8 +4,8 @@
 #include <WiFi.h>
 
 // === Wi-Fi Credentials ===
-#define WIFI_SSID "Legion_5"
-#define WIFI_PASSWORD "Lenovolegion50"
+#define WIFI_SSID "********"
+#define WIFI_PASSWORD "************"
 
 // === connectWiFi ===
 // Connects the ESP32 to a specified Wi-Fi network using the defined credentials.
