@@ -109,13 +109,13 @@ firebase-robot-coordination/
 
 ```bash
 # Using Arduino IDE or PlatformIO
-Open `main_robot_code.ino` and flash to ESP32
+Open `esp32_thesis_car.ino` and flash to ESP32
 ```
 
 ### 4. Run Robotic Arm (Raspberry Pi)
 
 ```bash
-python3 robotic_arm_controller.py
+python3 robot_arm_thesis.py
 ```
 
 ### 5. Launch Mobile App
