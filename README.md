@@ -69,7 +69,7 @@ This architecture is designed around **event-driven coordination**, allowing ind
 ```bash
 firebase-robot-coordination/
 ├── src/
-│   ├── main_robot_code.ino          # ESP32 firmware
+│   ├── esp32_thesis_car.ino          # ESP32 firmware
 │   ├── firebase_setup.h             # Auth & DB config
 │   ├── motor_control.h              # PWM motor control
 │   ├── sensor_readings.h            # Sensor helpers
@@ -77,10 +77,10 @@ firebase-robot-coordination/
 ├── app/
 │   └── robot_flutter_app/           # Flutter UI code
 ├── arm/
-│   └── robotic_arm_controller.py    # Raspberry Pi servo control
+│   └── robot_arm_thesis.py    # Raspberry Pi servo control
 ├── assets/
-│   ├── demo_photos/                 # Photos of robot setup
-│   └── diagrams/                    # System and timing diagrams
+│   ├── demo_video/                 # Video of robot setup
+│
 └── README.md
 ```
 
