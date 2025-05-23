@@ -156,8 +156,7 @@ Constructor University Bremen — School of Computer Science and Engineering (20
 ---
 
 ## 📸 Demo Gallery
-
-*(Add photos or GIFs here from `assets/demo_photos/`)*
+https://github.com/sushanmali50/esp32_firebase_thesis/blob/main/assets/20250515_033234.webm
 
 ---
 
