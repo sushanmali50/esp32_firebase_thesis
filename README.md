@@ -37,13 +37,26 @@ This architecture is designed around **event-driven coordination**, allowing ind
 
 ```mermaid
 flowchart TD
-  A[Mobile App (Flutter)] --> B[Firebase RTDB]
-  B --> A
-  B --> C[ESP32 Robot Car]
-  B --> D[Raspberry Pi Arm]
-  C --> B
-  D --> B
+  A[Mobile App (Flutter)]
+  B[Firebase RTDB]
+  C[ESP32 Robot Car]
+  D[Raspberry Pi Arm]
+
+  A --> B:::label1
+  B --> A:::label2
+  B --> C:::label3
+  B --> D:::label4
+  C --> B:::label5
+  D --> B:::label6
+
+  classDef label1 fill=none,stroke=none;
+  classDef label2 fill=none,stroke=none;
+  classDef label3 fill=none,stroke=none;
+  classDef label4 fill=none,stroke=none;
+  classDef label5 fill=none,stroke=none;
+  classDef label6 fill=none,stroke=none;
 ```
+
 
 ## 📁 Folder Structure
 
