@@ -4,8 +4,8 @@
 #include <Firebase_ESP_Client.h>
 
 // === Firebase Configuration Constants ===
-#define API_KEY "AIzaSyB0t_iUPn7eoqh4JjIeI5834KOlyDPGZL8"
-#define DATABASE_URL "https://esp32-thesis-9627d-default-rtdb.europe-west1.firebasedatabase.app/"
+#define API_KEY "************"
+#define DATABASE_URL "*******************"
 
 // === setupFirebase ===
 // Initializes the Firebase connection and performs anonymous sign-up.
