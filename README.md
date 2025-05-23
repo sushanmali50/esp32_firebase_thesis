@@ -37,13 +37,14 @@ This architecture is designed around **event-driven coordination**, allowing ind
 
 ```mermaid
 flowchart TD
-  A[Mobile App (Flutter)] -->|commands + updates| B[Firebase RTDB]
-  B -->|mode/sensor logs| A
-  B -->|status/command| C[ESP32 Robot Car]
-  B -->|task trigger| D[Raspberry Pi Arm]
-  C -->|sensor data| B
-  D -->|task_done flag| B
+  A[Mobile App (Flutter)] --> B[Firebase RTDB]
+  B --> A
+  B --> C[ESP32 Robot Car]
+  B --> D[Raspberry Pi Arm]
+  C --> B
+  D --> B
 ```
+
 ## 📁 Folder Structure
 
 ```bash
