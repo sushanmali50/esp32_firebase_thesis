@@ -21,6 +21,12 @@ This architecture is designed around **event-driven coordination**, allowing ind
 - 📈 Logging of latency metrics, memory usage, and task durations
 - 📂 Lightweight modular code structure for embedded development
 
+---
+
+## 📸 Demo Gallery
+https://github.com/user-attachments/assets/2d8776ab-ac26-4926-aea7-3334b16dde35
+---
+
 ## 🔧 Tech Stack
 
 | Component         | Description                                     |
@@ -152,13 +158,6 @@ Constructor University Bremen — School of Computer Science and Engineering (20
 - Closed-loop control for arm tasks  
 - Integration with on-device camera + image recognition  
 - Expanded multi-agent coordination (multiple robots/arms)  
-
----
-
-## 📸 Demo Gallery
-https://github.com/user-attachments/assets/2d8776ab-ac26-4926-aea7-3334b16dde35
-
-
 
 ---
 
