@@ -1,8 +1,17 @@
+import os
 import time
 import datetime
 import firebase_admin
 from firebase_admin import credentials, db
 from adafruit_servokit import ServoKit
+
+# Validate configuration before initializing hardware.
+credential_path = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
+database_url = os.environ.get("FIREBASE_DATABASE_URL")
+if not credential_path or not database_url:
+    raise RuntimeError(
+        "Set GOOGLE_APPLICATION_CREDENTIALS and FIREBASE_DATABASE_URL before starting."
+    )
 
 # === PCA9685 Initialization ===
 # Setup for 16-channel PWM servo controller
@@ -17,9 +26,9 @@ for i in range(nbPCAServo):
 
 # === Firebase Initialization ===
 # Load credentials and initialize Firebase connection
-cred = credentials.Certificate("serviceAccountKey.json")
+cred = credentials.Certificate(credential_path)
 firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://esp32-thesis-9627d-default-rtdb.europe-west1.firebasedatabase.app/'
+    'databaseURL': database_url
 })
 
 # Get references to specific Firebase Realtime Database nodes
@@ -32,7 +41,9 @@ default_position = [90, 90, 90, 90, 90, 100]
 # === Servo Motion Helper ===
 # Smoothly interpolates a servo's movement from current to target angle
 def smooth_single(index, target, steps=20, delay=0.05):
-    current = pca.servo[index].angle or 90  # Default to 90 if angle is None
+    current = pca.servo[index].angle
+    if current is None:
+        current = 90  # Zero degrees is a valid starting position.
     for step in range(steps + 1):
         interp = current + (target - current) * step / steps
         pca.servo[index].angle = interp

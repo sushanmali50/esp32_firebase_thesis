@@ -1,0 +1,2 @@
+firebase-admin
+adafruit-circuitpython-servokit

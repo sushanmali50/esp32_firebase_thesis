@@ -3,9 +3,8 @@
 
 #include <WiFi.h>
 
-// === Wi-Fi Credentials ===
-#define WIFI_SSID "********"
-#define WIFI_PASSWORD "************"
+// Local configuration (copy secrets.example.h to secrets.h).
+#include "secrets.h"
 
 // === connectWiFi ===
 // Connects the ESP32 to a specified Wi-Fi network using the defined credentials.

@@ -3,9 +3,8 @@
 
 #include <Firebase_ESP_Client.h>
 
-// === Firebase Configuration Constants ===
-#define API_KEY "************"
-#define DATABASE_URL "*******************"
+// Local configuration (copy secrets.example.h to secrets.h).
+#include "secrets.h"
 
 // === setupFirebase ===
 // Initializes the Firebase connection and performs anonymous sign-up.
