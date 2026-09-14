@@ -13,3 +13,20 @@ __pycache__/
 src/secrets.h
 serviceAccountKey.json
 **/serviceAccountKey.json
+
+# Flutter / Dart generated state
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+build/
+**/android/.gradle/
+**/android/local.properties
+**/ios/Flutter/ephemeral/
+**/macos/Flutter/ephemeral/
+
+# Project-specific Firebase client configuration
+**/google-services.json
+**/GoogleService-Info.plist
+**/firebase_options.dart
