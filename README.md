@@ -1,9 +1,11 @@
 # ESP32 and Firebase Robot Coordination
 ### Bachelor thesis · Constructor University Bremen · 2025
 
-A low-cost robotics prototype connecting an ESP32 mobile robot and a Raspberry Pi servo arm through Firebase Realtime Database. The mobile robot follows an IR track, reports sensor data, and requests an arm task when it reaches a checkpoint.
+A low-cost multi-robot prototype connecting an ESP32 mobile robot and a Raspberry Pi robotic arm through Firebase Realtime Database. The mobile robot follows an IR track, reports sensor data, and requests an arm task when it reaches a checkpoint.
 
-**Engineering focus:** embedded C++, sensor acquisition, PWM actuation, distributed state coordination, and telemetry.
+**Engineering focus:** Embedded C++, sensor acquisition, PWM actuation, distributed state coordination, and telemetry.
+
+**Tech:** ESP32 · C++ · Raspberry Pi · Python · Firebase RTDB · Flutter · TB6612FNG · PCA9685 · MPU6050
 
 [Watch the project demo](https://github.com/user-attachments/assets/2d8776ab-ac26-4926-aea7-3334b16dde35) · [Repository video](assets/20250515_033234%20%281%29.mp4)
 
