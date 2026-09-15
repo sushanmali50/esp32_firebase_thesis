@@ -9,6 +9,14 @@ A low-cost multi-robot prototype connecting an ESP32 mobile robot, a Raspberry P
 
 [Watch the project demo](https://github.com/user-attachments/assets/2d8776ab-ac26-4926-aea7-3334b16dde35) · [Repository video](assets/20250515_033234%20%281%29.mp4)
 
+## Dashboard preview
+
+| Car telemetry and control | Six-servo arm control | Coordination event logs |
+| :---: | :---: | :---: |
+| <a href="assets/screenshots/car-dashboard.png"><img src="assets/screenshots/car-dashboard.png" alt="Flutter Car tab showing live telemetry, operating mode, motion controls and speed control" width="260"></a> | <a href="assets/screenshots/arm-control.png"><img src="assets/screenshots/arm-control.png" alt="Flutter Arm tab showing six servo sliders and gripper controls" width="260"></a> | <a href="assets/screenshots/event-logs.png"><img src="assets/screenshots/event-logs.png" alt="Flutter Logs tab showing checkpoint and task-completion events" width="260"></a> |
+
+The dashboard streams robot state from Firebase RTDB and writes manual commands, operating mode, PWM demand and arm actions back to the shared database.
+
 ## Repository scope
 
 This repository contains the **ESP32 firmware, Raspberry Pi arm controller, and Flutter monitoring/control app source**. The Flutter folder is preserved as a source snapshot from the thesis prototype; generated platform scaffolding and project-specific Firebase configuration are intentionally excluded.
